@@ -6,15 +6,15 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
+cl.login(token="True")
 cl.loginResult()
 
 ki = LINETCR.LINE()
-ki.login(qr=True)
+ki.login(token="True")
 ki.loginResult()
 
 ki2 = LINETCR.LINE()
-ki2.login(qr=True)
+ki2.login(token="True")
 ki2.loginResult()
 
 print "login success plak"
@@ -74,8 +74,8 @@ mid = cl.getProfile().mid
 kimid = ki.getProfile().mid
 ki2mid = ki2.getProfile().mid
 Bots=[mid,kimid,ki2mid]
-owner =["ued156c86ffa56024c0acba16f7889e6d"]
-admin = ["ued156c86ffa56024c0acba16f7889e6d"]
+owner =["u2cdd5e9d08976a9138138a8902ecf030"]
+admin = ["u2cdd5e9d08976a9138138a8902ecf030"]
 wait = {
     'contact':False,
     'autoJoin':True,
